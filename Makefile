@@ -15,10 +15,10 @@ view: $(OUTPUT)
 spell::
 	ispell *.tex
 
-clean::
+tidy::
 	rm -fv *.aux *.log *.bbl *.blg *.toc *.out *.lot *.lof *.xml *-blx.bib
 
-clear::
+clean::
 	rm -fv *.aux *.log *.bbl *.blg *.toc *.out *.lot *.lof *.xml *-blx.bib *.pdf
 	clear
 
