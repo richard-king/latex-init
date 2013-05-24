@@ -1,5 +1,13 @@
-\documentclass[conference]{IEEEtran}
-\usepackage[style=authoryear-icomp,natbib=true]{biblatex}
+\documentclass[conference,a4paper,draftcls]{IEEEtran}
+\usepackage[style=numeric-comp,natbib=true]{biblatex}
+\usepackage[bookmarks]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{floatrow}
+\usepackage{float}
+\usepackage{cuted}
+\usepackage{graphicx}
+
+\hypersetup{pdfborder = {0 0 0}}
 
 \bibliography{paper}
 \begin{document}
@@ -11,23 +19,41 @@
 Dublin City University,\\
 Glasnevin, Dublin 9, Ireland.\\
 Email: richard.king5@mail.dcu.ie\\
-{\bf DATE}}}
+{\bf \today}}}
 
 \maketitle
 
-
 \begin{abstract}
-Abstract goes here...
+%The abstract summarises the complete paper. It is not an introduction! It should briefly state the problem, how it was tackled and the conclusions drawn. Any significant result can also be included.
 \end{abstract}
+
+\begin{IEEEkeywords}
+Academic papers, templates.
+\end{IEEEkeywords}
 
 \IEEEpeerreviewmaketitle
 
 \section{Introduction}
-Put all the things here
+%The introduction usually describes the background of the project with brief information on general knowledge of the subject. This sets the scene by stating the problem being tackled and what the aims of the project are.
 
+\section{Background}
+%The background section presents related or similar work and provides the reader with brief summaries of any principles, laws, and equations that underly the work. Unfamiliar terms may be explained and where space is an issue, direct the reader to references for further explanations.
 
-\section{Conclusion}
-In summary...
+\section{Method}
+%Method should outline how the task/experiment was carried out, including rationale for any decisions made. Details of any equipment and subjects used should be also included. Basically, you should include enough information, so that the reader could duplicate as much of the experimental conditions or design details as possible.
+
+\section{Results and Discussion}
+%This section includes presentations of the data and results in graphical and/or tabular form. Statistical analysis of the variation in measurements/results can also be presented. The findings should be explicitly related to the stated objectives of the project. Details and tasks that that may distract the reader unnecessarily should be presented in Appendices.
+%This is the section where you have a chance to discuss the results and draw conclusions from them - i.e. where you show your ability to think analytically about your findings.
+
+\section{Conclusions and Recommendations}
+%This section is usually left until the rest of the paper has been written. Conclusions are drawn in the context of the objectives of the project. They should be supported by data and results, and, if possible, compared with theory and data obtained by others in the literature (i.e. related published work). It is a chance to summarise what you have learnt from the project. Remember that human attention spans are extremely short, and the reader will appreciate a good summary, even if you feel that your conclusion is self-evident.
+
+%Recommendations are also extremely important, as they provide an opportunity to demonstrate the experience you have gained. The ability to self-assess one's work with a view to suggesting ways things could have been carried out differently is a valuable asset.
+
+\section{Future Work}
+%Recommendations can also include suggestions to how the work could be expanded or extended. This is often placed in a separate section entitled "Future Work".
+
 \printbibliography
 
 \end{document}
